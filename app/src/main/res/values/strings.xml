@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">حسابگر شاخص توده بدن</string>
+    <string name="title_activity_analyze">آنالیز</string>
+    <string name="bs1">کمبود وزن</string>
+    <string name="bs2">میانه</string>
+    <string name="bs3">نرمال</string>
+    <string name="bs4">اضافه وزن</string>
+    <string name="bs5">چاقی مرحله 1</string>
+    <string name="bs6">چاقی مرحله 2</string>
+    <string name="bs7">چاقی مرحله 3</string>
+    <string name="bs8">نامشخص</string>
+    <string name="title_activity_about">درباره ما</string>
+    <string name="ma_warning">اطلاعات خواسته شده را وارد نمایید</string>
+    <string name="ma_b65">این الگوریتم برای محاسبه قد زیر 65 سانتیمتر مناسب نمی باشد</string>
+    <string name="ma_b1">وزن وارد شده اشتباه است</string>
+    <string name="ma_ua">سن وارد شده اشتباه است</string>
+    <string name="a_warning">توجه: اطلاعاتی که مشاهده می کنید جهت اطلاع از شاخص توده بدن شما می باشد که بر اساس یک استاندارد جهانی محاسبه می گردد. وزن نرمال و وضعیت جسمی با در نظر گرفتن عوامل متعددی مانند: جنسیت، سن، چربی بدن و... توسط پزشک اندازه گیری و محاسبه می شود.</string>
+</resources>

@@ -1,0 +1,224 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.behmerd.bmicalculator.AnalyzeActivity"
+    android:id="@+id/masterL" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/llaTopBar"
+        android:gravity="right"
+        android:background="#333333">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/title_activity_analyze"
+            android:id="@+id/tvTitle"
+            android:layout_gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/ivAbout"
+            android:src="@drawable/about"
+            android:layout_below="@+id/mailL"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mailL"
+        android:layout_below="@+id/llaTopBar"
+        android:layout_centerHorizontal="true">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivBMIBar"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/underweight"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relL">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Body Status"
+            android:id="@+id/tvBodyStatus"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignTop="@+id/tvStatus"
+            android:layout_toLeftOf="@+id/tvStatus"
+            android:layout_toStartOf="@+id/tvStatus"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="BMI"
+            android:id="@+id/tvBMI"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignTop="@+id/tvIndex"
+            android:layout_toLeftOf="@+id/tvIndex"
+            android:layout_toStartOf="@+id/tvIndex"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Best Weight"
+            android:id="@+id/tvBestWeight"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignTop="@+id/tvBW"
+            android:layout_toLeftOf="@+id/tvBW"
+            android:layout_toStartOf="@+id/tvBW"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="To Lose"
+            android:id="@+id/tvToLose"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignTop="@+id/tvTL"
+            android:layout_toLeftOf="@+id/tvTL"
+            android:layout_toStartOf="@+id/tvTL"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Min-Max"
+            android:id="@+id/tvMinMax"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignTop="@+id/tvMM"
+            android:layout_toLeftOf="@+id/tvMM"
+            android:layout_toStartOf="@+id/tvMM"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="وضعیت:"
+            android:id="@+id/tvStatus"
+            android:layout_alignParentTop="false"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=":BMI"
+            android:id="@+id/tvIndex"
+            android:layout_below="@+id/tvBodyStatus"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:textSize="15sp"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="وزن ایده آل:"
+            android:id="@+id/tvBW"
+            android:layout_below="@+id/tvBMI"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:textSize="15sp"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="تا وزن ایده آل:"
+            android:id="@+id/tvTL"
+            android:layout_below="@+id/tvBestWeight"
+            android:layout_marginTop="30dp"
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="بازه نرمال وزنی:"
+            android:id="@+id/tvMM"
+            android:layout_marginTop="30dp"
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:textSize="15sp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/tvTL"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/a_warning"
+        android:id="@+id/tvWarn"
+        android:layout_below="@+id/mailL"
+        android:layout_centerHorizontal="true"
+        android:gravity="right"
+        android:textSize="15sp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:id="@+id/mobileBanner"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp">
+    </FrameLayout>
+
+</RelativeLayout>
+
+
